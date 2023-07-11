@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
+    <title>Login</title>
+
+    <!-- Scripts -->
+    <script src="index.js"></script>
+    <script src="js/app.js" defer></script>
+    <script src="js/jV.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+      
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+    <!-- Styles -->
+    <link href="css/app.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!--Icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+</head>
+<body>
+<div class="reg-form">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form">
+                <form method="POST" action="{{ route('login') }}" class="register-form">
+        
+                    <h1>Welcome!</h1>
+                    <p class="mb-0">Our lovable pet is waiting for you!</p>
+                    <p class="fs-6 mytext-center">Don't have an account yet?
+                        <a href="registrationform.html" >Register</a>
+                    </p>
+                    
+                    <div class="row md-8">
+                        <div class="col-md-9 fs-5">
+                            <label for="email" class="form-label">Email Address</label>
+                        </div>
+                        <div class="col-md-10 mb-3">
+                            <input id="email" type="email" placeholder="Email Address" class="registration form-control" name="email" value="Email" required autocomplete="email">
+
+                        
+                                <span class="invalid-feedback" role="alert">
+                                    <strong></strong>
+                                </span>
+                          
+                        </div>
+                    </div>
+
+
+                    <div class="row md-8">
+                        <div class="col-md-9 fs-5">
+                            <label for="password" class="form-label">Password</label>
+                        </div>
+                        <div class="col-md-10">
+                            <input id="password" type="password" placeholder="Password" class="reg form-control" name="password" required autocomplete="new-password">
+
+                     
+                                <span class="invalid-feedback" role="alert">
+                                    <strong></strong>
+                                </span>
+                       
+                        </div>
+                    </div>
+
+                    <div class="row md-8">
+                        <div class="col-md-3">
+                            <div class="form-check">
+                                <input class="form-check-input small-checkbox" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
+                                <label class="form-check-label rememberme fs-6" for="remember">
+                                 Remember me
+                                </label>
+                            </div>
+                        </div>
+                
+                    </div>
+
+                    <div class="row md-8">
+                        <div class="col-md-9 mt-4 text-center">
+                            <button onclick="login()" type="submit" class="btn reg-btn fw-bold text-white px-3 py-2">
+                               LOGIN
+                            </button>
+                        </div>
+                    </div>
+
+                </form>
+            
+                
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="registerdesign d-flex align-items-center vh-100" style="background-image: url('img/BG Paws.png');">
+                <img src="img/logindog.png" class="registerpic img-fluid d-flex vh-100">
+                
+            </div>
+        </div> 
+    </div>
+   
+</div>
+</body>
+</html>

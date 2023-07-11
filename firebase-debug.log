@@ -1,0 +1,36 @@
+[debug] [2023-07-11T02:03:58.623Z] ----------------------------------------------------------------------
+[debug] [2023-07-11T02:03:58.625Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\DESKTOP\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve --only hosting --project reantaso-philippe
+[debug] [2023-07-11T02:03:58.625Z] CLI Version:   12.4.3
+[debug] [2023-07-11T02:03:58.625Z] Platform:      win32
+[debug] [2023-07-11T02:03:58.625Z] Node Version:  v18.16.1
+[debug] [2023-07-11T02:03:58.626Z] Time:          Tue Jul 11 2023 10:03:58 GMT+0800 (China Standard Time)
+[debug] [2023-07-11T02:03:58.626Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-07-11T02:03:58.747Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-07-11T02:03:58.748Z] > authorizing via signed-in user (mcadag@gbox.adnu.edu.ph)
+[debug] [2023-07-11T02:03:58.748Z] [iam] checking project reantaso-philippe for permissions ["firebase.projects.get"]
+[debug] [2023-07-11T02:03:58.748Z] > refreshing access token with scopes: []
+[debug] [2023-07-11T02:03:58.750Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-07-11T02:03:58.750Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-07-11T02:03:58.936Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-07-11T02:03:58.936Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-07-11T02:03:58.973Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/reantaso-philippe:testIamPermissions [none]
+[debug] [2023-07-11T02:03:58.973Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/reantaso-philippe:testIamPermissions x-goog-quota-user=projects/reantaso-philippe
+[debug] [2023-07-11T02:03:58.973Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/reantaso-philippe:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-07-11T02:04:07.849Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/reantaso-philippe:testIamPermissions 200
+[debug] [2023-07-11T02:04:07.849Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/reantaso-philippe:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-07-11T02:04:07.850Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/reantaso-philippe [none]
+[debug] [2023-07-11T02:04:08.459Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/reantaso-philippe 200
+[debug] [2023-07-11T02:04:08.460Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/reantaso-philippe {"projectId":"reantaso-philippe","projectNumber":"1015476296082","displayName":"Reantaso-Philippe","name":"projects/reantaso-philippe","resources":{"hostingSite":"reantaso-philippe"},"state":"ACTIVE","etag":"1_01feac22-be19-4fde-9028-b6b2c08277b5"}
+[debug] [2023-07-11T02:04:08.463Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/reantaso-philippe/sites 
+[debug] [2023-07-11T02:04:10.306Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/reantaso-philippe/sites 200
+[debug] [2023-07-11T02:04:10.307Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/reantaso-philippe/sites {"sites":[{"name":"projects/reantaso-philippe/sites/reantaso-philippe","defaultUrl":"https://reantaso-philippe.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-07-11T02:04:10.307Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/reantaso-philippe/webApps/-/config [none]
+[debug] [2023-07-11T02:04:12.108Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/reantaso-philippe/webApps/-/config 200
+[debug] [2023-07-11T02:04:12.108Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/reantaso-philippe/webApps/-/config {"projectId":"reantaso-philippe","storageBucket":"reantaso-philippe.appspot.com","apiKey":"AIzaSyBrLpZqXhgk2ZDqz-sKksLws6biVD2S_cQ","authDomain":"reantaso-philippe.firebaseapp.com","messagingSenderId":"1015476296082"}
+[debug] [2023-07-11T02:04:12.135Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/reantaso-philippe [none]
+[debug] [2023-07-11T02:04:13.591Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/reantaso-philippe 200
+[debug] [2023-07-11T02:04:13.591Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/reantaso-philippe {"projectId":"reantaso-philippe","projectNumber":"1015476296082","displayName":"Reantaso-Philippe","name":"projects/reantaso-philippe","resources":{"hostingSite":"reantaso-philippe"},"state":"ACTIVE","etag":"1_01feac22-be19-4fde-9028-b6b2c08277b5"}
+[info] i  hosting[reantaso-philippe]: Serving hosting files from: dist {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mdist\u001b[22m"}}
+[info] +  hosting[reantaso-philippe]: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[info] i  hosting: ::1 - - [11/Jul/2023:02:04:22 +0000] "GET / HTTP/1.1" 404 139 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [11/Jul/2023:02:04:22 +0000] \"GET / HTTP/1.1\" 404 139 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36\""}}
